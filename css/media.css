@@ -1,0 +1,145 @@
+/* // Small devices (landscape phones, 576px and up) */
+@media (max-width: 320px) {
+  #contact ul.info {
+    flex-direction: column;
+  }
+}
+@media (min-width: 576px) {
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  #ychoose .wrapper {
+    max-width: 600px;
+  }
+  #services .wrapper {
+    max-width: 750px;
+  }
+  #services .wrapper .card {
+    max-width: 355px;
+    margin: 0 0 20px;
+  }
+  #reviews .main .wrapper {
+    max-width: 900px;
+  }
+  #about .wrapper {
+    max-width: 600px;
+  }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+@media (min-width: 1024px) {
+  #contact div.wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+  #contact ul.info {
+    flex-basis: 580px;
+    justify-content: space-between;
+  }
+  #contact ul.social {
+    flex-basis: 180px;
+    justify-content: space-between;
+  }
+  #made .wrapper {
+    max-width: 590px;
+  }
+}
+@media (min-width: 1160px) {
+  #welcome {
+    padding: 0px 10px;
+  }
+  #ychoose .wrapper {
+    max-width: 1030px;
+  }
+}
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  header div.wrapper {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header .logo {
+    flex-basis: 33%;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  header .logo p {
+    margin-bottom: 0;
+  }
+  header ul.nav {
+    flex-basis: 40%;
+  }
+  #banner .wrapper {
+    margin: 0 auto;
+  }
+  #banner {
+    height: 740px;
+    display: flex;
+    align-items: center;
+  }
+  #banner .wrapper a {
+    margin-top: 70px;
+  }
+  #services .wrapper {
+    max-width: 1175px;
+  }
+  #made .wrapper {
+    max-width: 1175px;
+  }
+  #made .wrapper .right {
+    flex-basis: 51%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  #reviews .main .wrapper {
+    max-width: 1145px;
+  }
+  #reviews .yellow .wrapper {
+    max-width: 1150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+  }
+  #reviews .yellow .wrapper .left {
+    margin: 0;
+    padding-left: 0px;
+  }
+  #reviews .yellow .wrapper .left h1 {
+    text-align: left;
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  #reviews .yellow .wrapper form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+  }
+  #reviews .yellow .wrapper form input,
+  #reviews .yellow .wrapper form textarea {
+    margin-bottom: 10px;
+  }
+  #reviews .yellow .wrapper form input:nth-of-type(1),
+  #reviews .yellow .wrapper form input:nth-of-type(2) {
+    flex-basis: 250px;
+  }
+  #reviews .yellow .wrapper form textarea {
+    flex-basis: 390px;
+  }
+  #reviews .yellow .wrapper form input:last-of-type {
+    flex-basis: 120px;
+  }
+  #about .wrapper {
+    max-width: 1160px;
+  }
+}

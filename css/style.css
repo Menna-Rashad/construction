@@ -1,0 +1,563 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Roboto:wght@300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  outline: none;
+  list-style-type: none;
+}
+/*for debugging*/
+/* * {
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+} */
+html {
+  /* width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px; */
+  overflow-x: hidden;
+}
+:root {
+  --mcolor: #ffcb0f;
+}
+body {
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+#contact {
+  width: 100%;
+  background-color: var(--mcolor);
+}
+#contact .wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 1170px;
+}
+#contact ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 10px;
+}
+#contact ul.social {
+  text-align: center;
+}
+#contact ul.social li {
+  flex-basis: 16%;
+}
+header {
+  background-color: #222533;
+  color: #fff;
+  padding: 10px 20px;
+}
+header div.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1170px;
+  margin: 0 auto;
+  align-items: center;
+}
+header .logo {
+  flex-basis: 100%;
+}
+header .logo h2 {
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-style: italic;
+  line-height: 2rem;
+}
+header .logo h2 span {
+  color: var(--mcolor);
+}
+header .logo p {
+  color: gray;
+  margin-bottom: 10px;
+}
+header ul.nav {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 100%;
+}
+header ul.nav li {
+  flex-basis: content;
+}
+header ul.nav li a {
+  display: block;
+  color: #fff;
+  text-align: center;
+}
+header ul.nav li a:hover {
+  color: var(--mcolor);
+}
+#banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../Images/banner.jpg") no-repeat center;
+  background-size: cover;
+  padding: 10px 10px 5px;
+  text-align: center;
+}
+#banner .wrapper {
+  max-width: 1100px;
+  color: #fff;
+}
+#banner .wrapper h3 {
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+#banner .wrapper h1 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+#banner .wrapper h1:last-of-type {
+  color: var(--mcolor);
+  margin-top: -15px;
+  margin-bottom: 10px;
+}
+#banner .wrapper a {
+  background-color: #000;
+  border: thin solid var(--mcolor);
+  color: var(--mcolor);
+  text-transform: uppercase;
+  padding: 5px 10px;
+  display: inline-block;
+  margin: 10px;
+}
+#welcome {
+  padding: 50px 10px 0;
+}
+#welcome .wrapper {
+  display: flex;
+  max-width: 1198px;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+#welcome .wrapper .left {
+  max-width: 620px;
+}
+#welcome .wrapper .left h1 {
+  text-transform: uppercase;
+  color: var(--mcolor);
+  font-size: 2rem;
+  letter-spacing: 2px;
+}
+#welcome .wrapper .left h3 {
+  color: #484848;
+  letter-spacing: 1px;
+}
+#welcome .wrapper .left p {
+  margin: 20px 0;
+  color: #484848;
+}
+#welcome .wrapper .left a {
+  background-color: var(--mcolor);
+  color: #fff;
+  text-transform: uppercase;
+  padding: 6px 20px;
+  border-radius: 7px;
+  letter-spacing: 1px;
+  display: inline-block;
+}
+#welcome .wrapper .right {
+  max-width: 520px;
+}
+#welcome .wrapper .right img {
+  width: 100%;
+  height: auto;
+}
+#ychoose {
+  padding: 70px 10px 30px;
+  background: linear-gradient(rgba(33, 37, 41, 0.5), rgba(33, 37, 41, 0.5)),
+    url("../Images/bg4.jpg") no-repeat center;
+  background-size: cover;
+}
+#ychoose h2 {
+  color: var(--mcolor);
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 2rem;
+}
+#ychoose p {
+  color: #fff;
+  max-width: 1120px;
+  margin: 0 auto 60px;
+  text-align: center;
+}
+#ychoose .wrapper {
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+#ychoose .wrapper .card {
+  height: 300px;
+  width: 220px;
+  margin: 0 auto 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+#ychoose .wrapper .cont {
+  width: 220px;
+  height: 230px;
+  padding: 0 10px 15px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 7px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+#ychoose .wrapper .card .cont div {
+  height: 140px;
+  width: 140px;
+  background-color: var(--mcolor);
+  color: #000;
+  line-height: 140px;
+  font-size: 3.5rem;
+  border-radius: 50%;
+  text-align: center;
+  top: -70px;
+  left: 40px;
+  position: absolute;
+}
+#ychoose .wrapper .card h3 {
+  color: var(--mcolor);
+  text-transform: uppercase;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 10px;
+}
+#ychoose .wrapper .card .cont p {
+  margin-bottom: 0;
+}
+#services {
+  padding: 85px 5px;
+}
+#services h2 {
+  color: #484848;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1px;
+  margin-bottom: 55px;
+  font-size: 2rem;
+}
+#services .wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 360px;
+  margin: 0 auto;
+}
+#services .wrapper .card {
+  max-width: 355px;
+  margin: 0 auto 20px;
+}
+#services .wrapper .card .cardimg {
+  position: relative;
+  height: auto;
+}
+#services .wrapper .card img {
+  width: 100%;
+  height: auto;
+}
+#services .wrapper .card .cardimg .title {
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  color: #fff;
+  letter-spacing: 2px;
+  position: absolute;
+  font-weight: 400;
+  width: 100%;
+  bottom: 5px;
+}
+#services .wrapper .card div p {
+  margin: 35px 0;
+  text-align: justify;
+}
+#services .wrapper .card div a {
+  background-color: var(--mcolor);
+  color: #fff;
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 6px 20px;
+  border-radius: 7px;
+  letter-spacing: 1px;
+}
+#made {
+  padding: 65px 5px 100px;
+  background: linear-gradient(rgba(33, 37, 41, 0.7), rgba(33, 37, 41, 0.7)),
+    url("../Images/bg2.jpg") no-repeat center;
+  background-size: cover;
+}
+#made h2 {
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+  font-size: 2rem;
+}
+#made p {
+  color: #fff;
+  max-width: 1120px;
+  text-align: center;
+  margin: 0 auto 60px;
+}
+#made ul {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 590px;
+  margin: 0 auto 50px;
+  justify-content: space-between;
+  align-items: center;
+}
+#made ul li {
+  color: #fff;
+  padding: 5px 15px;
+  text-transform: uppercase;
+}
+#made ul li:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 20px;
+}
+#made .wrapper img {
+  width: 100%;
+  height: auto;
+}
+#made .wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 560px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+#made .wrapper .right .top,
+#made .wrapper .right .bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#made .wrapper .right .top div,
+#made .wrapper .right .bottom div {
+  max-width: 290px;
+  margin: 0 auto;
+}
+#reviews {
+  background: url("../Images/bg3.jpg") center no-repeat;
+  background-size: cover;
+  padding: 65px 0 0;
+  color: #484848;
+}
+#reviews .main {
+  padding: 0 5px;
+}
+#reviews .main h2 {
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+  font-size: 2rem;
+}
+#reviews .main > p {
+  max-width: 900px;
+  text-align: center;
+  margin: 0 auto 70px;
+}
+#reviews .main .wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 600px;
+  margin: 0 auto;
+}
+#reviews .main .wrapper article {
+  max-width: 320px;
+  margin: 20px auto;
+}
+#reviews .main .wrapper article .text .block {
+  background-color: #e5e5e5;
+  display: flex;
+  padding: 25px 20px;
+  justify-content: space-between;
+}
+#reviews .main .wrapper article.middle .text .block {
+  background-color: var(--mcolor);
+  color: #fff;
+}
+#reviews .main .wrapper article p {
+  text-align: justify;
+  flex-basis: 80%;
+  padding-right: 15px;
+}
+#reviews .main .wrapper article i {
+  font-size: 2rem;
+  flex-basis: 15%;
+}
+#reviews .main .wrapper article img {
+  display: block;
+  margin: 0 auto;
+}
+#reviews .main .wrapper article > img {
+  display: block;
+  margin: 10px auto;
+  border-radius: 50%;
+}
+#reviews .main .wrapper article > h5 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1rem;
+}
+#reviews .yellow {
+  background-color: var(--mcolor);
+  opacity: 0.7;
+  padding: 35px 5px;
+}
+#reviews .yellow .wrapper .left {
+  max-width: 530px;
+  margin: 0 auto 20px;
+  padding-left: 5px;
+}
+#reviews .yellow .wrapper .left h1 {
+  text-transform: uppercase;
+  line-height: 1.9rem;
+}
+#reviews .yellow .wrapper .left h1:last-of-type {
+  font-weight: 400;
+  letter-spacing: 2px;
+  word-spacing: 4px;
+}
+#reviews .yellow .wrapper form {
+  display: flex;
+  flex-direction: column;
+  max-width: 520px;
+  margin: 0 auto;
+}
+#reviews .yellow .wrapper form input,
+#reviews .yellow .wrapper form textarea {
+  height: 45px;
+  padding: 15px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 10px;
+}
+#reviews .yellow .wrapper form textarea {
+  resize: none;
+}
+#reviews .yellow .wrapper form input:last-of-type {
+  color: #fff;
+  background-color: #222533;
+  letter-spacing: 1px;
+}
+#reviews .grey {
+  background-color: #484848;
+  opacity: 0.5;
+  height: 40px;
+}
+#about {
+  padding: 75px 5px;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("../Images/bg2.jpg") no-repeat center;
+  background-size: cover;
+  color: #fff;
+}
+#about .wrapper {
+  max-width: 260px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+#about .wrapper .company,
+#about .wrapper .explore,
+#about .wrapper .post,
+#about .wrapper .contact {
+  max-width: 260px;
+  margin: 0 auto 20px;
+}
+#about .wrapper .company h3,
+#about .wrapper .explore h3,
+#about .wrapper .post h3,
+#about .wrapper .contact h3 {
+  font-weight: 300;
+  margin-bottom: 30px;
+  font-size: 1.7rem;
+}
+#about .wrapper .company h4 {
+  color: var(--mcolor);
+  text-transform: uppercase;
+  font-style: italic;
+  letter-spacing: 1px;
+  font-size: 1.5rem;
+  line-height: 20px;
+}
+#about .wrapper .company p {
+  margin-bottom: 30px;
+}
+#about .wrapper .company p:first-of-type {
+  color: grey;
+  margin-bottom: 20px;
+}
+#about .wrapper .company ul {
+  display: flex;
+  justify-content: space-between;
+}
+#about .wrapper .company ul li {
+  width: 45px;
+  height: 45px;
+  background-color: var(--mcolor);
+  border-radius: 50%;
+  color: #222222;
+  text-align: center;
+  line-height: 45px;
+  font-size: 1.2rem;
+}
+#about .wrapper .explore ul li i {
+  margin-right: 20px;
+}
+#about .wrapper .explore ul li a {
+  color: #fff;
+}
+#about .wrapper .explore ul li a:hover {
+  text-decoration: underline;
+}
+#about .wrapper .post ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+#about .wrapper .post ul li span {
+  height: 50px;
+  width: 50px;
+  border: #fff solid 2px;
+  border-radius: 50%;
+  line-height: 45px;
+  margin-right: 20px;
+  text-align: center;
+  font-size: 1rem;
+}
+#about .wrapper .contact li {
+  margin-bottom: 20px;
+}
+#about .wrapper .contact li i {
+  margin-right: 20px;
+}
+footer {
+  background-color: #1a1c27;
+  color: #fff;
+  text-align: center;
+}
+footer span {
+  color: var(--mcolor);
+}
